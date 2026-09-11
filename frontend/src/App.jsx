@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   const updateTaskStatus = async (id, status) => {
   try {
-    const response = await fetch(`http://localhost:5000/api/tasks/${id}`, {
+    const response = await fetch(`https://nova-project-t0gu.onrender.com/api/tasks/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -69,7 +69,7 @@ function App() {
   };
 const fetchUsers = async () => {
   try {
-    const response = await fetch("http://localhost:5000/api/users");
+    const response = await fetch("https://nova-project-t0gu.onrender.com/api/users");
     const data = await response.json();
     setUsers(data);
   } catch (error) {
@@ -90,7 +90,7 @@ const fetchUsers = async () => {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/auth/register",
+        "https://nova-project-t0gu.onrender.com/api/auth/register",
         {
           method: "POST",
           headers: {
@@ -125,7 +125,7 @@ const fetchUsers = async () => {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/auth/login",
+        "https://nova-project-t0gu.onrender.com/api/auth/login",
         {
           method: "POST",
           headers: {
@@ -171,7 +171,7 @@ const fetchUsers = async () => {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/projects",
+        "https://nova-project-t0gu.onrender.com/api/projects",
         {
           method: "POST",
           headers: {
@@ -207,7 +207,7 @@ const fetchUsers = async () => {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/tasks",
+        "https://nova-project-t0gu.onrender.com/api/tasks",
         {
           method: "POST",
           headers: {
