@@ -50,7 +50,7 @@ function App() {
 
   const fetchProjects = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/projects");
+      const response = await fetch("https://nova-project-t0gu.onrender.com/api/projects");
       const data = await response.json();
       setProjects(data);
     } catch (error) {
@@ -60,7 +60,7 @@ function App() {
 
   const fetchTasks = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/tasks");
+      const response = await fetch("https://nova-project-t0gu.onrender.com/api/tasks");
       const data = await response.json();
       setTasks(data);
     } catch (error) {
